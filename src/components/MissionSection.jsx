@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const OFFICE_IMG = "/images/fogtech-office.png";
+const OFFICE_IMG = "/images/ourmission.png";
 
 export default function MissionSection() {
   return (

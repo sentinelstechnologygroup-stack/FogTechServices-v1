@@ -8,7 +8,7 @@ function trackEvent(eventName, params = {}) {
   // window.gtag?.('event', eventName, params);
 }
 
-const HERO_IMG = "/images/fogtech-hero.png";
+const HERO_IMG = "/images/hero.png";
 
 const trustBadges = [
   { Icon: Clock, label: "After-Hours Service" },

@@ -13,7 +13,7 @@ export default function Footer() {
             aria-label="FogTech Services — home"
           >
             <img
-              src="/images/fogtech-logo.png"
+              src="/images/logo.png"
               alt="FogTech Services logo"
               width="100"
               height="33"
