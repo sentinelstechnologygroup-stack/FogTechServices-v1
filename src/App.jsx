@@ -5,6 +5,7 @@ import TermsOfUse from "./pages/TermsOfUse";
 import Disclaimer from "./pages/Disclaimer";
 import ThankYou from "./pages/ThankYou";
 import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
         <Route
           path="*"
           element={

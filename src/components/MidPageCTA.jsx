@@ -31,7 +31,7 @@ export default function MidPageCTA({ heading, subtext, location = "mid-page" }) 
             )}
             <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
               <a
-                href="#contact"
+                href="/contact"
                 onClick={() => trackEvent('cta_click', { location, type: 'quote' })}
               >
                 <Button

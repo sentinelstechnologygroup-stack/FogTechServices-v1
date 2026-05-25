@@ -35,6 +35,7 @@ export default function Footer() {
           <nav aria-label="Footer legal links">
             <ul className="flex flex-wrap items-center justify-center gap-6 text-xs text-muted-foreground list-none p-0">
               <li><Link to="/services" className="hover:text-foreground transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-primary rounded">Services</Link></li>
+              <li><Link to="/contact" className="hover:text-foreground transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-primary rounded">Contact</Link></li>
               <li><Link to="/privacy" className="hover:text-foreground transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-primary rounded">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-foreground transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-primary rounded">Terms of Use</Link></li>
               <li><Link to="/disclaimer" className="hover:text-foreground transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-primary rounded">Disclaimer</Link></li>

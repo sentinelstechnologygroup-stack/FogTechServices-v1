@@ -50,7 +50,7 @@ export default function MissionSection() {
             </blockquote>
 
             <div className="mt-8">
-              <a href="#contact" aria-label="Get started with FogTech Services">
+              <a href="/contact" aria-label="Get started with FogTech Services">
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 h-12 font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
                   Let's Get Started
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />

@@ -125,7 +125,7 @@ export default function Services() {
                 fresher, and better maintained with dependable service options.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/#contact" aria-label="Request a service from FogTech Services">
+                <Link to="/contact" aria-label="Request a service from FogTech Services">
                   <Button
                     size="lg"
                     className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 h-14 text-base font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
@@ -137,7 +137,7 @@ export default function Services() {
                     />
                   </Button>
                 </Link>
-                <Link to="/#contact" aria-label="Contact FogTech Services">
+                <Link to="/contact" aria-label="Contact FogTech Services">
                   <Button
                     size="lg"
                     variant="outline"
@@ -212,7 +212,7 @@ export default function Services() {
                 </div>
 
                 <Link
-                  to="/#contact"
+                  to="/contact"
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
                   aria-label={`Request ${title} service`}
                 >
@@ -299,7 +299,7 @@ export default function Services() {
               Contact FogTech Services to discuss your property, service needs, and scheduling
               options.
             </p>
-            <Link to="/#contact" aria-label="Get in touch with FogTech Services">
+            <Link to="/contact" aria-label="Get in touch with FogTech Services">
               <Button
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 h-14 text-base font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"

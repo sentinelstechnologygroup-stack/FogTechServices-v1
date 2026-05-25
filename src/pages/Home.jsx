@@ -6,7 +6,6 @@ import MidPageCTA from "@/components/MidPageCTA";
 import WhyFogSection from "@/components/WhyFogSection";
 import MissionSection from "@/components/MissionSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import MobileCallButton from "@/components/MobileCallButton";
 
@@ -46,7 +45,6 @@ export default function Home() {
           />
 
           <GuaranteeSection />
-          <ContactSection />
         </main>
 
         <Footer />

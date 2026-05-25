@@ -88,7 +88,7 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => trackEvent('hero_cta_click', { type: 'get_started' })}
               aria-label="Get started — request a quote from FogTech Services"
             >

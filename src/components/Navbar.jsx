@@ -16,6 +16,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Services", href: "/services", isRoute: true },
+    { label: "Contact", href: "/contact", isRoute: true },
     { label: "What We Do", href: "/#what-we-do" },
     { label: "Why Fog", href: "/#why-fog" },
     { label: "Our Mission", href: "/#mission" },
@@ -76,7 +77,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:block">
-          <a href="/#contact" aria-label="Get a quote from FogTech Services">
+          <a href="/contact" aria-label="Get a quote from FogTech Services">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 font-semibold focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
               Get a Quote
             </Button>
@@ -125,7 +126,7 @@ export default function Navbar() {
                   </a>
                 )
               )}
-              <a href="/#contact" onClick={() => setMobileOpen(false)} aria-label="Get a quote from FogTech Services">
+              <a href="/contact" onClick={() => setMobileOpen(false)} aria-label="Get a quote from FogTech Services">
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-semibold mt-2">
                   Get a Quote
                 </Button>
