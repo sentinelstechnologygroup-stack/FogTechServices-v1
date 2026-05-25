@@ -15,10 +15,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "What We Do", href: "#what-we-do" },
-    { label: "Why Fog", href: "#why-fog" },
-    { label: "Our Mission", href: "#mission" },
-    { label: "Guarantee", href: "#guarantee" },
+    { label: "Services", href: "/services", isRoute: true },
+    { label: "What We Do", href: "/#what-we-do" },
+    { label: "Why Fog", href: "/#why-fog" },
+    { label: "Our Mission", href: "/#mission" },
+    { label: "Guarantee", href: "/#guarantee" },
   ];
 
   return (
@@ -51,20 +52,31 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8" role="list">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              role="listitem"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.isRoute ? (
+              <Link
+                key={link.label}
+                to={link.href}
+                role="listitem"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                role="listitem"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+              >
+                {link.label}
+              </a>
+            )
+          )}
         </div>
 
         <div className="hidden md:block">
-          <a href="#contact" aria-label="Get a quote from FogTech Services">
+          <a href="/#contact" aria-label="Get a quote from FogTech Services">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 font-semibold focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
               Get a Quote
             </Button>
@@ -92,17 +104,28 @@ export default function Navbar() {
             className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border"
           >
             <nav aria-label="Mobile navigation" className="px-6 py-6 space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block text-base text-muted-foreground hover:text-foreground transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
-                >
-                  {link.label}
-                </a>
-              ))}
-              <a href="#contact" onClick={() => setMobileOpen(false)} aria-label="Get a quote from FogTech Services">
+              {navLinks.map((link) =>
+                link.isRoute ? (
+                  <Link
+                    key={link.label}
+                    to={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-base text-muted-foreground hover:text-foreground transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block text-base text-muted-foreground hover:text-foreground transition-colors py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
+              <a href="/#contact" onClick={() => setMobileOpen(false)} aria-label="Get a quote from FogTech Services">
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-semibold mt-2">
                   Get a Quote
                 </Button>
