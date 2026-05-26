@@ -1,130 +1,141 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
-// GA4 placeholder
 function trackEvent(eventName, params = {}) {
   // window.gtag?.('event', eventName, params);
 }
 
-const HERO_IMG = "/images/hero.png";
+const HERO_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/3c48ab0cf_generated_image.png";
 
 const trustBadges = [
-  { Icon: Clock, label: "After-Hours Service" },
-  { Icon: Shield, label: "EPA Certified" },
+  { Icon: Clock, label: "Scheduled ERV Service" },
+  { Icon: Shield, label: "Commercial, Multi-Family & Home ERV Support" },
   { Icon: MapPin, label: "Houston, TX & Surrounding Areas" },
 ];
 
 export default function HeroSection() {
   return (
     <section
-      style={{ height: "clamp(600px, 90vh, 960px)" }}
       className="relative flex items-center overflow-hidden"
+      style={{ minHeight: "clamp(680px, 88vh, 860px)" }}
       aria-labelledby="hero-heading"
     >
-      {/* Background image — decorative */}
       <div className="absolute inset-0" aria-hidden="true">
         <img
           src={HERO_IMG}
           alt=""
           role="presentation"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
           decoding="async"
-          className="w-full h-full object-cover object-center md:object-[60%_center]"
+          className="h-full w-full object-cover [object-position:62%_center] md:[object-position:60%_center] lg:[object-position:58%_center]"
           width="1920"
           height="1080"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/55 to-background/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/10" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(5,10,15,0.9) 0%, rgba(5,10,15,0.76) 42%, rgba(5,10,15,0.34) 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(5,10,15,0.28) 0%, transparent 34%, rgba(5,10,15,0.58) 100%)",
+          }}
+        />
       </div>
 
-      <div className="relative z-10 w-full px-6 sm:px-10 lg:px-16" style={{ paddingTop: "clamp(80px, 12vw, 140px)", paddingBottom: "clamp(48px, 8vw, 96px)" }}>
-        <div className="max-w-xl lg:max-w-2xl">
+      <div
+        className="relative z-10 w-full px-6 sm:px-10 lg:px-16 xl:px-20"
+        style={{
+          paddingTop: "clamp(118px, 13vh, 156px)",
+          paddingBottom: "clamp(48px, 8vh, 96px)",
+        }}
+      >
+        <div className="max-w-[940px]">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2"
+            aria-hidden="true"
           >
-            <div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8"
-              aria-hidden="true"
-            >
-              <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-xs font-medium text-primary tracking-wide uppercase">
-                Houston's Trusted Disinfection Experts
-              </span>
-            </div>
+            <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+              Houston&apos;s ERV Cleaning &amp; Maintenance Specialists
+            </span>
           </motion.div>
 
           <motion.h1
             id="hero-heading"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl md:text-7xl font-black tracking-tight leading-[0.95] mb-6"
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="mb-6 max-w-[900px] text-[clamp(2.75rem,5.4vw,5.35rem)] font-black leading-[0.95] tracking-tight"
           >
-            Clean Means
-            <br />
-            <span className="text-primary">Safe.</span>
+            ERV Cleaning &amp; Maintenance
+            <br className="hidden lg:block" /> for{" "}
+            <span className="text-primary">Healthier, More Efficient Buildings</span>
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-lg"
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="mb-10 max-w-[660px] text-lg leading-relaxed text-slate-200 md:text-xl"
           >
-            Professional disinfecting services for commercial and residential
-            properties across the Houston metro. Eliminate 99.9% of pathogens
-            so you can get back to business — safely.
+            FogTech Services helps commercial properties, multi-family communities, facility
+            teams, and homeowners maintain cleaner energy recovery ventilation systems
+            through professional ERV cleaning, inspection support, and scheduled maintenance services.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4"
+            transition={{ duration: 0.7, delay: 0.7 }}
+            className="flex flex-wrap gap-4"
           >
             <a
               href="/contact"
-              onClick={() => trackEvent('hero_cta_click', { type: 'get_started' })}
-              aria-label="Get started — request a quote from FogTech Services"
+              onClick={() => trackEvent("hero_cta_click", { type: "request_erv_service" })}
+              aria-label="Request ERV service from FogTech Services"
             >
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 h-14 text-base font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                className="h-13 rounded-full bg-primary px-8 text-base font-semibold text-primary-foreground hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 group"
               >
-                Get Started Today
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                Request ERV Service
+                <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </Button>
             </a>
-            <a
-              href="#what-we-do"
-              aria-label="Learn more about our disinfecting services"
-            >
+
+            <Link to="/services" aria-label="View our ERV and cleaning services">
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full px-8 h-14 text-base border-border/50 hover:bg-secondary/50 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                className="h-13 rounded-full border-white/25 bg-black/10 px-8 text-base text-white hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
-                Learn More
+                View ERV Services
               </Button>
-            </a>
+            </Link>
           </motion.div>
 
-          {/* Trust badges */}
           <motion.ul
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="flex flex-wrap gap-6 mt-16 list-none p-0"
+            transition={{ duration: 0.8, delay: 1.1 }}
+            className="mt-12 flex list-none flex-wrap gap-6 p-0"
             aria-label="Service highlights"
           >
             {trustBadges.map(({ Icon, label }) => (
-              <li key={label} className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Icon className="w-4 h-4 text-primary/70 flex-shrink-0" aria-hidden="true" />
+              <li key={label} className="flex items-center gap-2 text-sm text-slate-300">
+                <Icon className="h-4 w-4 flex-shrink-0 text-primary/80" aria-hidden="true" />
                 <span>{label}</span>
               </li>
             ))}

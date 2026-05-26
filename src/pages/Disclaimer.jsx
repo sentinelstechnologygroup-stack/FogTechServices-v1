@@ -32,7 +32,7 @@ export default function Disclaimer() {
           <p className="text-muted-foreground text-sm">Effective Date: {EFFECTIVE_DATE} · Last reviewed: {EFFECTIVE_DATE}</p>
           <div className="mt-4 p-4 rounded-xl bg-card border border-border/50">
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Note:</strong> This is a placeholder disclaimer pending final legal review. Supporting documentation for product claims will be incorporated upon completion of legal review.
+              <strong className="text-foreground">Note:</strong> This is a placeholder disclaimer pending final legal review. Service descriptions and operational claims should be reviewed before final publication.
             </p>
           </div>
         </div>
@@ -45,24 +45,24 @@ export default function Disclaimer() {
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-3">Service Efficacy Claims</h2>
-            <p>All efficacy claims made on this website (including pathogen elimination rates, EPA certifications, and product safety claims) are based on data and documentation provided by the manufacturers of the disinfecting agents and equipment we use. These claims apply when services are performed under recommended conditions and protocols.</p>
-            <p className="mt-3">Results may vary depending on factors including but not limited to: property size, ventilation, surface types, pre-existing contamination levels, and adherence to post-treatment guidelines.</p>
+            <h2 className="text-xl font-semibold mb-3">Service Scope</h2>
+            <p>{COMPANY} provides ERV cleaning, ERV maintenance support, inspection support, and related facility service coordination. Service descriptions on this website are general summaries only. The final scope, schedule, and deliverables for any service are governed by the applicable written estimate, work order, or service agreement.</p>
+            <p className="mt-3">ERV installation and replacement support, when referenced, is coordinated through qualified subcontractor partners unless a separate written agreement states otherwise.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-3">EPA &amp; Regulatory Compliance</h2>
-            <p>References to EPA certification refer to the EPA List N certification of the disinfectant products used in our fogging treatments. {COMPANY} complies with all applicable federal, state, and local regulations governing the application of disinfecting agents. Product documentation and Safety Data Sheets (SDS) are available upon request.</p>
+            <h2 className="text-xl font-semibold mb-3">No Mechanical, Engineering, or Code Compliance Advice</h2>
+            <p>Information on this website is not mechanical engineering, HVAC design, electrical, code-compliance, legal, or regulatory advice. Mechanical repairs, electrical work, duct modifications, permitting, and code-sensitive work may require review or performance by properly qualified professionals.</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold mb-3">Not Medical or Health Advice</h2>
-            <p>Nothing on this website constitutes medical, public health, or infectious disease control advice. Our disinfecting services are a supplemental measure and should not be considered a substitute for professional medical guidance, public health recommendations, or comprehensive infection control programs.</p>
+            <p>Nothing on this website constitutes medical, public health, or indoor-air-quality certification advice. ERV cleaning and maintenance support may help maintain cleaner accessible components, but it is not a substitute for professional medical guidance, public health recommendations, or a comprehensive building operations program.</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold mb-3">No Guarantee of Specific Outcomes</h2>
-            <p>While we stand behind our work with a 100% satisfaction guarantee (subject to service agreement terms), we cannot guarantee the prevention or elimination of all illness or infection at a treated property. Environmental conditions, recontamination, and other factors outside our control may affect outcomes.</p>
+            <p>While we stand behind our work with a satisfaction commitment subject to service agreement terms, we do not guarantee specific airflow, energy savings, health outcomes, indoor air quality results, or system performance changes. Results may vary based on system condition, building design, maintenance history, and factors outside our control.</p>
           </section>
 
           <section>

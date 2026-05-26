@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   Wind,
   Building2,
   Wrench,
-  Droplets,
   ArrowRight,
   Home,
   Briefcase,
@@ -19,52 +18,81 @@ import {
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import MobileCallButton from "@/components/MobileCallButton";
 
 const services = [
   {
     Icon: Wind,
-    title: "Fogging & Sanitizing",
+    title: "ERV Cleaning",
     description:
-      "FogTech Services provides fogging and sanitizing support for homes, offices, commercial spaces, and shared-use environments. Our service is designed to help support cleaner indoor spaces and reduce surface-level contaminants without making unsupported medical or health guarantees.",
-  },
-  {
-    Icon: Building2,
-    title: "Residential & Corporate Office Cleaning",
-    description:
-      "FogTech Services provides routine and project-based cleaning services for residential properties, offices, and corporate environments. Our team focuses on dependable service, clean presentation, and practical cleaning solutions tailored to the property.",
+      "Professional cleaning for energy recovery ventilation units to help reduce buildup, improve accessible component cleanliness, and support better system performance for commercial buildings, multi-family communities, homes, and facility teams.",
+    serviceItems: [
+      "Accessible ERV component cleaning",
+      "Core and housing cleaning support",
+      "Filter area cleaning",
+      "Intake and exhaust obstruction checks",
+      "Service documentation",
+    ],
   },
   {
     Icon: Wrench,
-    title: "ERV Service & Maintenance",
+    title: "ERV Maintenance Support",
     description:
-      "FogTech Services provides general ERV service and maintenance support for residential, office, and light commercial properties. Energy recovery ventilators help exchange stale indoor air with fresh outdoor air while supporting balanced ventilation. Routine maintenance can help keep filters, accessible components, and airflow paths cleaner and better maintained.",
+      "Preventive ERV maintenance support for property managers, multi-family communities, homeowners, facility operators, and commercial building teams that need a practical service partner for recurring upkeep.",
     serviceItems: [
       "Filter inspection",
       "Filter replacement support",
-      "Accessible component cleaning",
-      "Intake and exhaust obstruction checks",
-      "ERV core visual inspection",
       "Basic operation checks",
-      "Maintenance documentation",
+      "Maintenance scheduling support",
+      "Service notes after each visit",
     ],
     safetyNote:
       "For mechanical, electrical, ducting, code-compliance, or repair issues, FogTech may recommend review by a qualified HVAC, electrical, or mechanical professional.",
   },
   {
-    Icon: Droplets,
-    title: "Residential & Corporate Office Pressure Washing",
+    Icon: Building2,
+    title: "Multi-Family Community ERV Scheduled Service",
     description:
-      "FogTech Services provides residential and commercial pressure washing support for homes, offices, sidewalks, driveways, entryways, exterior walls, and other exterior surfaces. Our pressure washing services help improve exterior appearance with a focus on safe, professional cleaning.",
+      "Scheduled ERV service options for apartment communities, condos, townhomes, and property management portfolios that need recurring maintenance support across multiple units or buildings.",
+    serviceItems: [
+      "Recurring ERV service scheduling",
+      "Community and portfolio service planning",
+      "Unit/access coordination notes",
+      "Multi-building service documentation",
+    ],
+  },
+  {
+    Icon: Home,
+    title: "Home ERV Service",
+    description:
+      "ERV service support for homeowners who need help with cleaning, inspection support, filter/access-panel review, or maintenance guidance for residential ERV systems.",
+    serviceItems: [
+      "Residential ERV cleaning support",
+      "Filter and access-panel review",
+      "Visible buildup checks",
+      "Maintenance guidance",
+    ],
+  },
+  {
+    Icon: Building2,
+    title: "ERV Inspection Support",
+    description:
+      "Visual review and documentation support to help facility teams identify maintenance needs, access-panel concerns, filter issues, buildup, and other items that may require follow-up.",
+  },
+  {
+    Icon: Users,
+    title: "ERV Installation & Replacement Coordination",
+    description:
+      "When installation or replacement is needed, FogTech can coordinate support through qualified subcontractor partners. FogTech does not represent itself as the direct installer unless separately agreed in writing.",
   },
 ];
 
 const clientTypes = [
-  { Icon: Home, label: "Residential Homes" },
   { Icon: Briefcase, label: "Corporate Offices" },
-  { Icon: Store, label: "Small Businesses" },
   { Icon: Factory, label: "Commercial Properties" },
-  { Icon: Users, label: "Shared-Use Spaces" },
+  { Icon: Users, label: "Multi-Family Communities" },
+  { Icon: Home, label: "Homeowners" },
+  { Icon: Store, label: "Small Businesses" },
+  { Icon: Users, label: "Facility Teams" },
   { Icon: UserCheck, label: "Property Managers" },
 ];
 
@@ -76,53 +104,55 @@ const fadeUp = (delay = 0) => ({
 });
 
 export default function Services() {
-  useEffect(() => {
-    document.title = "Services | FogTech Services";
-
-    const descriptionContent =
-      "FogTech Services provides fogging, sanitizing, residential and office cleaning, ERV maintenance support, and pressure washing services for homes, offices, and commercial properties.";
-
-    let description = document.querySelector('meta[name="description"]');
-    if (!description) {
-      description = document.createElement("meta");
-      description.setAttribute("name", "description");
-      document.head.appendChild(description);
-    }
-    description.setAttribute("content", descriptionContent);
-  }, []);
-
   return (
     <>
+      <title>ERV Cleaning & Maintenance Services | FogTech Services</title>
+      <meta
+        name="description"
+        content="FogTech Services provides ERV cleaning, ERV maintenance support, inspection support, and scheduled ERV service for commercial buildings, multi-family communities, homes, and facilities."
+      />
+
       <Navbar />
 
       <main id="main-content">
         {/* ── Hero ──────────────────────────────────────── */}
         <section
-          className="relative overflow-hidden"
-          style={{ minHeight: "clamp(620px, 72vh, 760px)" }}
+          className="relative flex items-end overflow-hidden"
+          style={{ minHeight: "clamp(620px, 72vh, 780px)" }}
           aria-labelledby="services-hero-heading"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_24%,rgba(48,164,108,0.18),transparent_34%),radial-gradient(circle_at_82%_18%,rgba(255,255,255,0.06),transparent_28%),linear-gradient(135deg,hsl(var(--background))_0%,hsl(var(--card))_52%,hsl(var(--background))_100%)]" aria-hidden="true">
-            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/45" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/45 to-background/20" />
+          <div className="absolute inset-0" aria-hidden="true">
+            <img
+              src="https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/24959acde_generated_3602c4fc.png"
+              alt=""
+              role="presentation"
+              loading="eager"
+              fetchPriority="high"
+              className="h-full w-full object-cover object-[62%_center] sm:object-[60%_center]"
+              width="1920"
+              height="1080"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/65 to-background/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/20" />
           </div>
 
-          <div
-            className="relative z-10 flex min-h-[inherit] w-full items-center px-6 pt-28 pb-20 sm:px-10 lg:px-16"
-          >
+          <div className="relative z-10 w-full px-6 pt-32 pb-16 sm:px-10 sm:pt-36 lg:px-16">
             <motion.div {...fadeUp(0.2)} className="max-w-3xl">
               <p className="text-xs font-semibold text-primary tracking-widest uppercase mb-4">
                 What We Offer
               </p>
               <h1
                 id="services-hero-heading"
-                className="max-w-4xl text-[clamp(2.75rem,7vw,5.75rem)] font-black tracking-tight leading-[1.02] mb-6"
+                className="max-w-[820px] text-[clamp(2.75rem,5.5vw,5.25rem)] font-black tracking-tight leading-[0.95] mb-5"
               >
-                Professional Cleaning, <span className="text-primary">Sanitizing &amp; Maintenance</span> Services
+                ERV Cleaning &amp;
+                <br className="hidden sm:block" />
+                <span className="text-primary">Maintenance Support</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-                FogTech Services helps homes, offices, and commercial spaces stay cleaner,
-                fresher, and better maintained with dependable service options.
+              <p className="max-w-2xl text-lg leading-relaxed text-slate-200/90 mb-8">
+                FogTech Services helps commercial properties, multi-family communities,
+                homeowners, and facility teams keep energy recovery ventilation systems
+                cleaner, better maintained, and documented.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" aria-label="Request a service from FogTech Services">
@@ -130,7 +160,7 @@ export default function Services() {
                     size="lg"
                     className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 h-14 text-base font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                   >
-                    Request Service
+                    Request ERV Service
                     <ArrowRight
                       className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                       aria-hidden="true"
@@ -164,7 +194,7 @@ export default function Services() {
               id="services-grid-heading"
               className="text-3xl md:text-4xl font-bold mt-4 tracking-tight"
             >
-              What FogTech Services Provides
+              ERV Services FogTech Provides
             </h2>
           </motion.div>
 
@@ -272,10 +302,9 @@ export default function Services() {
               Why Maintenance Matters
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Routine cleaning and maintenance help properties stay presentable, functional,
-              and better prepared for daily use. FogTech Services focuses on practical service,
-              clear communication, and dependable support for residential and commercial
-              environments.
+              Routine ERV cleaning and maintenance can help reduce buildup in accessible
+              components, support better airflow, and give facility teams clearer documentation
+              for ongoing building maintenance decisions.
             </p>
           </motion.div>
         </section>
@@ -293,10 +322,10 @@ export default function Services() {
               id="services-cta-heading"
               className="text-3xl md:text-4xl font-bold tracking-tight mb-5"
             >
-              Need Reliable Cleaning or Maintenance Support?
+              Need ERV Cleaning or Maintenance Support?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-              Contact FogTech Services to discuss your property, service needs, and scheduling
+              Contact FogTech Services to discuss your building, community, home, ERV service needs, and scheduling
               options.
             </p>
             <Link to="/contact" aria-label="Get in touch with FogTech Services">
@@ -304,7 +333,7 @@ export default function Services() {
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 h-14 text-base font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
-                Get in Touch
+                Request ERV Service
                 <ArrowRight
                   className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                   aria-hidden="true"
@@ -316,7 +345,6 @@ export default function Services() {
       </main>
 
       <Footer />
-      <MobileCallButton />
     </>
   );
 }

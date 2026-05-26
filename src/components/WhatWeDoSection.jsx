@@ -1,55 +1,53 @@
 import React from "react";
-import { Zap, ShieldCheck, MapPin } from "lucide-react";
+import { Building2, Home, CalendarCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
   {
-    Icon: Zap,
-    title: "Fast",
+    Icon: Building2,
+    title: "Commercial ERV Cleaning",
     description:
-      "Services completed after-hours so you'll be open and ready by morning. Zero downtime for your Houston-area business.",
+      "ERV cleaning and maintenance support for offices, facilities, retail spaces, warehouses, and other Houston-area commercial properties.",
   },
   {
-    Icon: ShieldCheck,
-    title: "Safe",
+    Icon: CalendarCheck,
+    title: "Multi-Family Scheduled Service",
     description:
-      "Our disinfecting fog is 100% food-grade safe and EPA certified. Bad for germs — not for people.",
+      "Planned ERV service options for apartment communities, condos, townhomes, and property management portfolios that need repeatable maintenance support.",
   },
   {
-    Icon: MapPin,
-    title: "Local",
+    Icon: Home,
+    title: "Home ERV Service",
     description:
-      "Native Texan owned and operated. Proudly serving Houston, Katy, Sugar Land, The Woodlands, Pearland, and surrounding communities.",
+      "ERV service support for homeowners who need help with cleaning, inspection support, filter/access-panel review, or guidance on maintenance needs.",
   },
 ];
 
 export default function WhatWeDoSection() {
   return (
-    <section id="what-we-do" className="py-24 md:py-32 relative" aria-labelledby="services-heading">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="what-we-do" className="relative py-24 md:py-32" aria-labelledby="services-heading">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16 md:mb-20"
+          className="mb-16 text-center md:mb-20"
         >
-          <p className="text-xs font-semibold text-primary tracking-widest uppercase">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary">
             What We Do
           </p>
-          <h2 id="services-heading" className="text-4xl md:text-5xl font-bold mt-4 tracking-tight">
-            We kill germs so you can
+          <h2 id="services-heading" className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+            ERV service for buildings,
             <br />
-            <span className="text-primary">get back to business</span>
+            <span className="text-primary">communities, and homes</span>
           </h2>
-          <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
-            Our proven system eliminates 99.9% of bacteria, viruses, and other
-            pathogens in your space — including Human Coronavirus. Trusted by
-            businesses and homeowners across the greater Houston area.
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            FogTech Services helps commercial properties, multi-family communities, and homeowners keep energy recovery ventilation systems cleaner, better maintained, and easier to schedule.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-5 md:gap-6">
+        <div className="grid gap-5 md:grid-cols-3 md:gap-6">
           {features.map((feature, i) => (
             <motion.article
               key={feature.title}
@@ -57,19 +55,19 @@ export default function WhatWeDoSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="group relative p-7 md:p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 focus-within:border-primary/30"
+              className="group relative rounded-2xl border border-border/50 bg-card p-7 transition-all duration-500 hover:border-primary/30 focus-within:border-primary/30 md:p-8"
             >
               <div
-                className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-500"
+                className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 transition-colors duration-500 group-hover:bg-primary/20"
                 aria-hidden="true"
               >
-                <feature.Icon className="w-7 h-7 text-primary" />
+                <feature.Icon className="h-7 w-7 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="mb-3 text-xl font-bold">{feature.title}</h3>
+              <p className="leading-relaxed text-muted-foreground">
                 {feature.description}
               </p>
-              <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" aria-hidden="true" />
+              <div className="pointer-events-none absolute inset-0 rounded-2xl bg-primary/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" aria-hidden="true" />
             </motion.article>
           ))}
         </div>

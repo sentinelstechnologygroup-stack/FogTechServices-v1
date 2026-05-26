@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
-const FOG_IMG = "/images/whyfog.png";
+const ERV_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/3c48ab0cf_generated_image.png";
 
 const benefits = [
-  "Reaches every nook and cranny traditional cleaning can't",
-  "Hospital-grade disinfecting coverage for the entire room",
-  "No residue left behind after treatment",
-  "No wiping needed — ready for use immediately",
-  "Complete 360° surface and air coverage",
+  "Helps reduce buildup in ERV cores, filters, and accessible components",
+  "Supports better airflow and balanced ventilation performance",
+  "Service documentation provided after each maintenance visit",
+  "Designed for commercial buildings, offices, and facility environments",
+  "Preventive approach helps identify issues before they escalate",
 ];
 
 export default function WhyFogSection() {
@@ -27,8 +27,8 @@ export default function WhyFogSection() {
           >
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
               <img
-                src={FOG_IMG}
-                alt="Dense disinfecting fog filling a room, reaching every surface and corner"
+                src={ERV_IMG}
+                alt="Technician servicing an ERV unit in a commercial facility"
                 loading="lazy"
                 decoding="async"
                 width="800"
@@ -40,11 +40,11 @@ export default function WhyFogSection() {
             {/* Floating stat */}
             <div
               className="absolute -bottom-6 -right-2 sm:right-8 bg-card border border-border/50 rounded-2xl p-5 md:p-6 shadow-2xl shadow-black/40"
-              aria-label="99.9% pathogen elimination rate"
+              aria-label="Commercial and facility ERV service focus"
             >
-              <div className="text-3xl md:text-4xl font-black text-primary">99.9%</div>
+              <div className="text-3xl md:text-4xl font-black text-primary">ERV</div>
               <div className="text-xs md:text-sm text-muted-foreground mt-1">
-                Pathogen Elimination
+                Cleaning &amp; Maintenance
               </div>
             </div>
           </motion.div>
@@ -57,23 +57,24 @@ export default function WhyFogSection() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-xs font-semibold text-primary tracking-widest uppercase">
-              Why Fog?
+              Why ERV Maintenance Matters
             </p>
             <h2 id="why-fog-heading" className="text-4xl md:text-5xl font-bold mt-4 tracking-tight leading-tight">
-              No residue.
+              Cleaner systems.
               <br />
-              No wiping.
+              Better airflow.
               <br />
-              <span className="text-primary">No sweat.</span>
+              <span className="text-primary">Dependable service.</span>
             </h2>
             <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
-              You can only reach and wipe so much of your space. Our
-              hospital-grade disinfecting fog reaches every surface for total
-              coverage you can trust — whether you're in Houston's Medical Center,
-              a Katy retail shop, or a Sugar Land office park.
+              Energy recovery ventilators help exchange stale indoor air with fresh
+              outdoor air. Over time, filters, cores, and accessible components can
+              accumulate buildup that affects performance. FogTech Services provides
+              practical ERV cleaning and maintenance support for commercial buildings
+              and facility teams across the Houston area.
             </p>
 
-            <ul className="mt-10 space-y-4 list-none p-0" aria-label="Benefits of fogging disinfection">
+            <ul className="mt-10 space-y-4 list-none p-0" aria-label="Benefits of ERV cleaning and maintenance">
               {benefits.map((b, i) => (
                 <motion.li
                   key={i}

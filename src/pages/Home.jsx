@@ -29,8 +29,8 @@ export default function Home() {
 
           {/* Mid-page CTA after services intro */}
           <MidPageCTA
-            heading="Serving Houston, Katy, Sugar Land & Beyond"
-            subtext="From downtown Houston to The Woodlands, Pearland, and Pasadena — our team is ready to protect your space today."
+            heading="ERV Service for Houston Buildings, Communities & Homes"
+            subtext="From commercial facilities to multi-family communities and home ERV systems, FogTech Services supports scheduled ERV cleaning and maintenance across the Houston area."
             location="after-what-we-do"
           />
 
@@ -39,8 +39,8 @@ export default function Home() {
 
           {/* Mid-page CTA before guarantee */}
           <MidPageCTA
-            heading="Ready to breathe easier?"
-            subtext="After-hours scheduling available so your business never misses a beat. Call or submit a quote request and we'll respond within one business day."
+            heading="Ready to schedule ERV service?"
+            subtext="Commercial, multi-family, and home ERV service requests are available by appointment. Submit a request and we'll follow up to review your system, schedule, and service needs."
             location="before-guarantee"
           />
 

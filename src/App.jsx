@@ -1,4 +1,6 @@
+import { Toaster } from "@/components/ui/toaster";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PageNotFound from "./lib/PageNotFound";
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
@@ -18,18 +20,9 @@ function App() {
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        <Route
-          path="*"
-          element={
-            <div className="min-h-screen flex items-center justify-center bg-black text-white">
-              <div className="text-center">
-                <h1 className="text-5xl font-bold mb-4">404</h1>
-                <p className="text-lg opacity-70">Page not found.</p>
-              </div>
-            </div>
-          }
-        />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <Toaster />
     </Router>
   );
 }

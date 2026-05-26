@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-semibold mb-3">1. Who We Are</h2>
-            <p>{COMPANY} ("we," "us," or "our") is a professional disinfecting and sanitizing service based in Houston, Texas. This Privacy Policy explains how we collect, use, and protect information you provide when you contact us or use our website.</p>
+            <p>{COMPANY} ("we," "us," or "our") provides ERV cleaning, maintenance support, and related facility service coordination in the Houston, Texas area. This Privacy Policy explains how we collect, use, and protect information you provide when you contact us or use our website.</p>
           </section>
 
           <section>
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
             <p>We use collected information to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-3 text-muted-foreground">
               <li>Respond to your inquiries and service requests</li>
-              <li>Schedule and provide our disinfecting services</li>
+              <li>Schedule and provide ERV cleaning, maintenance support, and related services</li>
               <li>Send service-related communications</li>
               <li>Improve our website and customer experience</li>
             </ul>

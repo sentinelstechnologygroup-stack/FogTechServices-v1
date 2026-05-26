@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const OFFICE_IMG = "/images/ourmission.png";
+const OFFICE_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/d9409370a_generated_ace5103d.png";
 
 export default function MissionSection() {
   return (
@@ -23,26 +23,25 @@ export default function MissionSection() {
               Our Mission
             </p>
             <h2 id="mission-heading" className="text-4xl md:text-5xl font-bold mt-4 tracking-tight leading-tight">
-              When "good enough"
+              Practical service.
               <br />
-              <span className="text-primary">isn't.</span>
+              <span className="text-primary">Clear communication.</span>
             </h2>
             <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
-              Traditional cleaning services focus on appearance — not health.
-              Our disinfecting fogging services specifically target both common
-              and nosocomial infections, giving Houston-area businesses and
-              families real peace of mind.
+              FogTech Services focuses on dependable ERV cleaning and maintenance
+              support for property managers, facility operators, multi-family community teams,
+              homeowners, and commercial building teams. We believe in practical service, honest communication,
+              and showing up prepared.
             </p>
             <p className="text-muted-foreground text-lg mt-4 leading-relaxed">
-              Everyday disinfectants battle everyday germs. Our EPA certified
-              disinfectant is anything but ordinary. We tackle the toughest
-              pathogens to make your space truly safe again — from the Heights
-              to the Energy Corridor and everywhere in between.
+              From filter inspection to accessible component cleaning and service
+              documentation, our team provides ERV system cleaning support designed
+              for commercial properties, multi-family communities, facilities, and homes across the Houston metro.
             </p>
 
             <blockquote className="mt-10 p-6 rounded-2xl bg-card border border-border/50 border-l-4 border-l-primary">
               <p className="text-xl font-semibold text-foreground leading-snug">
-                "Together we can move forward and get back to work."
+                "Dependable ERV service for buildings, communities, and homes."
               </p>
               <footer className="text-sm text-muted-foreground mt-3">
                 — The FogTech Team, Houston, TX
@@ -70,7 +69,7 @@ export default function MissionSection() {
             <div className="rounded-3xl overflow-hidden aspect-[4/3]">
               <img
                 src={OFFICE_IMG}
-                alt="A spotlessly clean, modern Houston office space after professional disinfection treatment"
+                alt="Modern commercial facility environment supported by professional ERV maintenance"
                 loading="lazy"
                 decoding="async"
                 width="800"
