@@ -1,4 +1,5 @@
 import React from "react";
+import usePageMeta from "@/hooks/use-page-meta";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Zap } from "lucide-react";
 
@@ -8,6 +9,11 @@ const PHONE = "832-755-6533";
 const EMAIL = "info@fogtechservices.com";
 
 export default function PrivacyPolicy() {
+  usePageMeta(
+    "Privacy Policy | FogTech Services",
+    "Read the FogTech Services privacy policy for ERV, indoor air quality, and ventilation service inquiries in the Houston area."
+  );
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Minimal nav */}

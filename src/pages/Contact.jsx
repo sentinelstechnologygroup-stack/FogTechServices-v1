@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import usePageMeta from "@/hooks/use-page-meta";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import ContactSection from "@/components/ContactSection";
@@ -6,31 +7,10 @@ import Footer from "@/components/Footer";
 import MobileCallButton from "@/components/MobileCallButton";
 
 export default function Contact() {
-  useEffect(() => {
-    const previousTitle = document.title;
-    const description =
-      "Contact FogTech Services for ERV cleaning, scheduled ERV service, multi-family community service, home ERV service, and maintenance support across the Houston area.";
-
-    document.title = "Contact ERV Service | FogTech Services";
-
-    let metaDescription = document.querySelector('meta[name="description"]');
-    const previousDescription = metaDescription?.getAttribute("content");
-
-    if (!metaDescription) {
-      metaDescription = document.createElement("meta");
-      metaDescription.setAttribute("name", "description");
-      document.head.appendChild(metaDescription);
-    }
-
-    metaDescription.setAttribute("content", description);
-
-    return () => {
-      document.title = previousTitle;
-      if (previousDescription) {
-        metaDescription?.setAttribute("content", previousDescription);
-      }
-    };
-  }, []);
+  usePageMeta(
+    "Contact ERV & Indoor Air Quality Service | FogTech Services",
+    "Contact FogTech Services for ERV installation coordination, ERV cleaning, scheduled ERV service, multi-family community service, home ERV service, and maintenance support across the Houston area."
+  );
 
   return (
     <>

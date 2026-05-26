@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import usePageMeta from "@/hooks/use-page-meta";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { CheckCircle, Phone, Mail, ArrowLeft, Zap } from "lucide-react";
@@ -11,6 +12,11 @@ function trackConversion() {
 }
 
 export default function ThankYou() {
+  usePageMeta(
+    "Thank You | FogTech Services",
+    "Thank you for contacting FogTech Services about ERV, indoor air quality, or ventilation service support in the Houston area."
+  );
+
   useEffect(() => {
     trackConversion();
   }, []);

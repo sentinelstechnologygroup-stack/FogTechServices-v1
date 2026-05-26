@@ -1,4 +1,5 @@
 import React from "react";
+import usePageMeta from "@/hooks/use-page-meta";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Zap } from "lucide-react";
 
@@ -8,6 +9,11 @@ const PHONE = "832-755-6533";
 const EMAIL = "info@fogtechservices.com";
 
 export default function TermsOfUse() {
+  usePageMeta(
+    "Terms of Use | FogTech Services",
+    "Review the FogTech Services website terms for ERV cleaning, maintenance support, installation coordination, and indoor air quality service information."
+  );
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border/50 px-6 py-5">

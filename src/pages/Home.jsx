@@ -1,4 +1,5 @@
 import React from "react";
+import usePageMeta from "@/hooks/use-page-meta";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
@@ -10,6 +11,11 @@ import Footer from "@/components/Footer";
 import MobileCallButton from "@/components/MobileCallButton";
 
 export default function Home() {
+  usePageMeta(
+    "FogTech Services | ERV Installation, Indoor Air Quality & HVAC Solutions – Houston, TX",
+    "FogTech Services provides ERV installation coordination, ERV cleaning, indoor air quality improvements, ventilation support, and healthier air solutions for homes, commercial properties, and multi-family communities in Houston and surrounding areas."
+  );
+
   return (
     <>
       {/* Skip-to-content link for keyboard/screen reader users */}

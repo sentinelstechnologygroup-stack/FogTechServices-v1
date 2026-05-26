@@ -19,7 +19,7 @@ const features = [
     Icon: Home,
     title: "Home ERV Service",
     description:
-      "ERV service support for homeowners who need help with cleaning, inspection support, filter/access-panel review, or guidance on maintenance needs.",
+      "ERV service support for homeowners who need cleaning, inspection support, filter/access-panel review, maintenance guidance, or installation and replacement coordination through qualified subcontractor partners.",
   },
 ];
 

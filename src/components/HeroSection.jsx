@@ -31,7 +31,7 @@ export default function HeroSection() {
           loading="eager"
           fetchPriority="high"
           decoding="async"
-          className="h-full w-full object-cover [object-position:62%_center] md:[object-position:60%_center] lg:[object-position:58%_center]"
+          className="h-full w-full object-cover brightness-[0.78] contrast-[0.92] [object-position:62%_center] md:[object-position:60%_center] lg:[object-position:58%_center]"
           width="1920"
           height="1080"
         />
@@ -39,14 +39,14 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(5,10,15,0.9) 0%, rgba(5,10,15,0.76) 42%, rgba(5,10,15,0.34) 100%)",
+              "linear-gradient(90deg, rgba(5,10,15,0.96) 0%, rgba(5,10,15,0.86) 42%, rgba(5,10,15,0.52) 70%, rgba(5,10,15,0.34) 100%)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(5,10,15,0.28) 0%, transparent 34%, rgba(5,10,15,0.58) 100%)",
+              "linear-gradient(180deg, rgba(5,10,15,0.36) 0%, transparent 34%, rgba(5,10,15,0.66) 100%)",
           }}
         />
       </div>

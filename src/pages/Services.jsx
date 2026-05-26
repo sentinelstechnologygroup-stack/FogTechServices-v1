@@ -1,4 +1,5 @@
 import React from "react";
+import usePageMeta from "@/hooks/use-page-meta";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -104,14 +105,13 @@ const fadeUp = (delay = 0) => ({
 });
 
 export default function Services() {
+  usePageMeta(
+    "ERV Installation, Cleaning & Maintenance Services | FogTech Services",
+    "FogTech Services provides ERV installation and replacement coordination, ERV cleaning, maintenance support, inspection support, and scheduled ERV service for commercial buildings, multi-family communities, homes, and facilities."
+  );
+
   return (
     <>
-      <title>ERV Cleaning & Maintenance Services | FogTech Services</title>
-      <meta
-        name="description"
-        content="FogTech Services provides ERV cleaning, ERV maintenance support, inspection support, and scheduled ERV service for commercial buildings, multi-family communities, homes, and facilities."
-      />
-
       <Navbar />
 
       <main id="main-content">

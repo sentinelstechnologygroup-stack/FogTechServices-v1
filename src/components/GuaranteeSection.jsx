@@ -32,10 +32,10 @@ export default function GuaranteeSection() {
             <div className="w-16 h-px bg-border mx-auto my-8" aria-hidden="true" />
 
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-              If, for any reason, you aren't satisfied with our service, you
-              can get a full refund within 30 days of your purchase. Our
-              friendly Houston-based support team will either help you get the
-              results you need or provide a swift refund — no questions asked.
+              If something about your ERV service visit does not meet the agreed
+              scope, contact us within 30 days. Our Houston-based team will
+              review the concern, discuss the service record, and work toward a
+              reasonable resolution under the applicable service agreement.
             </p>
           </div>
         </motion.div>
