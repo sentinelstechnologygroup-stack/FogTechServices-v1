@@ -31,7 +31,7 @@ export default function HeroSection() {
           loading="eager"
           fetchPriority="high"
           decoding="async"
-          className="h-full w-full object-cover brightness-[0.72] contrast-[0.92] [object-position:62%_center] md:[object-position:60%_center] lg:[object-position:58%_center]"
+          className="h-full w-full object-cover brightness-[0.76] contrast-[0.96] [object-position:72%_center] md:[object-position:68%_center] lg:[object-position:64%_center]"
           width="1920"
           height="1080"
         />

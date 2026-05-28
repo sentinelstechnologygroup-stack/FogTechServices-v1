@@ -49,7 +49,7 @@ export default function WhatWeDoSection() {
             <span className="text-primary">homes, offices, and properties</span>
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
-            FogTech Services is being repositioned as a practical cleaning and maintenance company first, with specialty support for fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow-related service needs.
+            FogTech Services provides practical cleaning and maintenance first, with specialty support for fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow-related service needs.
           </p>
         </motion.div>
 

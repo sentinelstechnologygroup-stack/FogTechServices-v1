@@ -64,7 +64,7 @@ export default function WhyFogSection() {
               <span className="text-primary">Specialty support.</span>
             </h2>
             <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
-              FogTech Services is built for customers who need practical help keeping homes, offices, and facilities clean, maintained, and ready to use. The core brand should lead with cleaning and maintenance, while ERV service and basic airflow-related upkeep remain specialty services for customers who need them.
+              FogTech Services is built for customers who need practical help keeping homes, offices, and facilities clean, maintained, and ready to use. Cleaning and maintenance stay at the center of the service experience, with ERV service and basic non-licensed airflow upkeep available as specialty support when customers need it.
             </p>
 
             <ul className="mt-10 space-y-4 list-none p-0" aria-label="Benefits of FogTech cleaning and maintenance service">

@@ -124,7 +124,7 @@ const fadeUp = (delay = 0) => ({
 export default function Services() {
   usePageMeta(
     "Cleaning, Maintenance & Specialty Services | FogTech Services",
-    "FogTech Services provides residential and corporate cleaning, property maintenance support, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance services in the Houston area."
+    "FogTech Services provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance support in Houston and surrounding areas."
   );
 
   return (
@@ -144,7 +144,7 @@ export default function Services() {
               role="presentation"
               loading="eager"
               fetchPriority="high"
-              className="h-full w-full object-cover object-[62%_center] sm:object-[60%_center]"
+              className="h-full w-full object-cover object-[72%_center] sm:object-[68%_center] lg:object-[64%_center]"
               width="1920"
               height="1080"
             />
@@ -166,7 +166,7 @@ export default function Services() {
                 <span className="text-primary">Specialty Property Services</span>
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-200/90 mb-8">
-                FogTech Services supports homes, offices, small businesses, property managers, and facility teams with practical cleaning, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance.
+                FogTech Services supports homes, offices, small businesses, property managers, and facility teams with practical cleaning, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" aria-label="Request cleaning or maintenance service from FogTech Services">
@@ -313,7 +313,7 @@ export default function Services() {
               Consistent Cleaning Prevents Bigger Problems
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Routine cleaning and maintenance helps homes, offices, and properties stay safer, fresher, and easier to operate. FogTech keeps the service offering practical: common cleaning first, then specialty support when the property needs fogging, sanitizing, pressure washing, ERV service, or basic airflow upkeep.
+              Routine cleaning and maintenance helps homes, offices, and properties stay safer, fresher, and easier to operate. FogTech keeps the service offering practical: common cleaning first, then specialty support when the property needs fogging, sanitizing, pressure washing, ERV service, or basic non-licensed airflow upkeep.
             </p>
           </motion.div>
         </section>

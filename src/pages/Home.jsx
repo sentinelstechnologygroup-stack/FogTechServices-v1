@@ -36,7 +36,7 @@ export default function Home() {
           {/* Mid-page CTA after services intro */}
           <MidPageCTA
             heading="Cleaning & Maintenance Support for Homes, Offices & Properties"
-            subtext="From routine cleaning to fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow upkeep, FogTech Services helps keep Houston-area spaces cleaner and better maintained."
+            subtext="From routine cleaning to fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow upkeep, FogTech Services helps keep Houston-area spaces cleaner and better maintained."
             location="after-what-we-do"
           />
 
