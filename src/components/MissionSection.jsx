@@ -12,7 +12,6 @@ export default function MissionSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
         <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -23,25 +22,20 @@ export default function MissionSection() {
               Our Mission
             </p>
             <h2 id="mission-heading" className="text-4xl md:text-5xl font-bold mt-4 tracking-tight leading-tight">
-              Practical service.
+              Reliable cleaning.
               <br />
-              <span className="text-primary">Clear communication.</span>
+              <span className="text-primary">Straightforward maintenance.</span>
             </h2>
             <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
-              FogTech Services focuses on dependable ERV cleaning and maintenance
-              support for property managers, facility operators, multi-family community teams,
-              homeowners, and commercial building teams. We believe in practical service, honest communication,
-              and showing up prepared.
+              FogTech Services focuses on dependable cleaning and maintenance support for homeowners, offices, small businesses, property managers, and facility teams. The goal is simple: show up prepared, communicate clearly, and handle the practical work that keeps spaces cleaner and better maintained.
             </p>
             <p className="text-muted-foreground text-lg mt-4 leading-relaxed">
-              From filter inspection to accessible component cleaning and service
-              documentation, our team provides ERV system cleaning support designed
-              for commercial properties, multi-family communities, facilities, and homes across the Houston metro.
+              From regular cleaning and sanitizing to pressure washing, ERV maintenance, and basic non-licensed airflow-related service tasks, FogTech gives customers a practical service partner for routine and specialty needs.
             </p>
 
             <blockquote className="mt-10 p-6 rounded-2xl bg-card border border-border/50 border-l-4 border-l-primary">
               <p className="text-xl font-semibold text-foreground leading-snug">
-                "Dependable ERV service for buildings, communities, and homes."
+                "Practical cleaning and maintenance support for the spaces people depend on."
               </p>
               <footer className="text-sm text-muted-foreground mt-3">
                 — The FogTech Team, Houston, TX
@@ -58,7 +52,6 @@ export default function MissionSection() {
             </div>
           </motion.div>
 
-          {/* Image */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +62,7 @@ export default function MissionSection() {
             <div className="rounded-3xl overflow-hidden aspect-[4/3]">
               <img
                 src={OFFICE_IMG}
-                alt="Modern commercial facility environment supported by professional ERV maintenance"
+                alt="Clean modern facility environment supported by FogTech Services"
                 loading="lazy"
                 decoding="async"
                 width="800"

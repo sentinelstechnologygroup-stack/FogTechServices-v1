@@ -14,7 +14,7 @@ function trackConversion() {
 export default function ThankYou() {
   usePageMeta(
     "Thank You | FogTech Services",
-    "Thank you for contacting FogTech Services about ERV, indoor air quality, or ventilation service support in the Houston area."
+    "Thank you for contacting FogTech Services about cleaning, maintenance, fogging, sanitizing, pressure washing, ERV maintenance, or basic airflow service support in the Houston area."
   );
 
   useEffect(() => {
@@ -72,7 +72,7 @@ export default function ThankYou() {
             We've received your message.
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            A member of our Houston team will be in touch with you shortly — usually within one business day. We look forward to making your space safe and clean.
+            A member of our Houston team will be in touch with you shortly — usually within one business day. We look forward to helping keep your space clean, maintained, and ready to use.
           </p>
 
           {/* Divider */}

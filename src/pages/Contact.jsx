@@ -8,8 +8,8 @@ import MobileCallButton from "@/components/MobileCallButton";
 
 export default function Contact() {
   usePageMeta(
-    "Contact ERV & Indoor Air Quality Service | FogTech Services",
-    "Contact FogTech Services for ERV installation coordination, ERV cleaning, scheduled ERV service, multi-family community service, home ERV service, and maintenance support across the Houston area."
+    "Contact Cleaning & Maintenance Service | FogTech Services",
+    "Contact FogTech Services for residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support across the Houston area."
   );
 
   return (
@@ -43,10 +43,10 @@ export default function Contact() {
                   id="contact-page-heading"
                   className="text-[clamp(2.75rem,6vw,5.25rem)] font-black leading-[0.98] tracking-tight"
                 >
-                  Request ERV service or ask a question.
+                  Request cleaning, maintenance, or specialty service.
                 </h1>
                 <p className="mt-7 max-w-3xl text-lg leading-relaxed text-slate-200 md:text-xl">
-                  Tell us about your facility, multi-family community, home, ERV service needs, and preferred schedule. FogTech Services supports building operators, property teams, and homeowners across the Houston area.
+                  Tell us about your home, office, property, service needs, and preferred schedule. FogTech Services supports homeowners, offices, property teams, and facility operators across the Houston area.
                 </p>
               </motion.div>
             </div>

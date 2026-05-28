@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
-const ERV_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/3c48ab0cf_generated_image.png";
+const SERVICE_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/d9409370a_generated_ace5103d.png";
 
 const benefits = [
-  "Helps reduce buildup in ERV cores, filters, and accessible components",
-  "Supports better airflow and balanced ventilation performance",
-  "Service documentation provided after each maintenance visit",
-  "Designed for commercial buildings, offices, and facility environments",
-  "Preventive approach helps identify issues before they escalate",
+  "One company for common cleaning, maintenance, and specialty service needs",
+  "Residential and corporate service options for recurring or one-time work",
+  "Fogging, sanitizing, pressure washing, and practical upkeep support",
+  "ERV and basic non-licensed airflow maintenance available as specialty service lines",
+  "Clear communication, scheduling support, and service notes when appropriate",
 ];
 
 export default function WhyFogSection() {
@@ -17,7 +17,6 @@ export default function WhyFogSection() {
     <section id="why-fog" className="py-24 md:py-32 relative" aria-labelledby="why-fog-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,8 +26,8 @@ export default function WhyFogSection() {
           >
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
               <img
-                src={ERV_IMG}
-                alt="Technician servicing an ERV unit in a commercial facility"
+                src={SERVICE_IMG}
+                alt="Clean commercial interior environment supported by FogTech Services"
                 loading="lazy"
                 decoding="async"
                 width="800"
@@ -37,19 +36,17 @@ export default function WhyFogSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" aria-hidden="true" />
             </div>
-            {/* Floating stat */}
             <div
               className="absolute -bottom-6 -right-2 sm:right-8 bg-card border border-border/50 rounded-2xl p-5 md:p-6 shadow-2xl shadow-black/40"
-              aria-label="Commercial and facility ERV service focus"
+              aria-label="Cleaning and maintenance service focus"
             >
-              <div className="text-3xl md:text-4xl font-black text-primary">ERV</div>
+              <div className="text-3xl md:text-4xl font-black text-primary">Clean</div>
               <div className="text-xs md:text-sm text-muted-foreground mt-1">
-                Cleaning &amp; Maintenance
+                Maintain &amp; Support
               </div>
             </div>
           </motion.div>
 
-          {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -57,24 +54,20 @@ export default function WhyFogSection() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-xs font-semibold text-primary tracking-widest uppercase">
-              Why ERV Maintenance Matters
+              Why FogTech
             </p>
             <h2 id="why-fog-heading" className="text-4xl md:text-5xl font-bold mt-4 tracking-tight leading-tight">
-              Cleaner systems.
+              Cleaner spaces.
               <br />
-              Better airflow.
+              Practical upkeep.
               <br />
-              <span className="text-primary">Dependable service.</span>
+              <span className="text-primary">Specialty support.</span>
             </h2>
             <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
-              Energy recovery ventilators help exchange stale indoor air with fresh
-              outdoor air. Over time, filters, cores, and accessible components can
-              accumulate buildup that affects performance. FogTech Services provides
-              practical ERV cleaning and maintenance support for commercial buildings
-              and facility teams across the Houston area.
+              FogTech Services is built for customers who need practical help keeping homes, offices, and facilities clean, maintained, and ready to use. The core brand should lead with cleaning and maintenance, while ERV service and basic airflow-related upkeep remain specialty services for customers who need them.
             </p>
 
-            <ul className="mt-10 space-y-4 list-none p-0" aria-label="Benefits of ERV cleaning and maintenance">
+            <ul className="mt-10 space-y-4 list-none p-0" aria-label="Benefits of FogTech cleaning and maintenance service">
               {benefits.map((b, i) => (
                 <motion.li
                   key={i}

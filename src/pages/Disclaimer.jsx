@@ -11,7 +11,7 @@ const EMAIL = "info@fogtechservices.com";
 export default function Disclaimer() {
   usePageMeta(
     "Disclaimer | FogTech Services",
-    "Review the FogTech Services disclaimer for ERV service, indoor air quality, ventilation support, and subcontracted installation or replacement coordination."
+    "Review the FogTech Services disclaimer for cleaning, maintenance, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support."
   );
 
   return (
@@ -52,23 +52,23 @@ export default function Disclaimer() {
 
           <section>
             <h2 className="text-xl font-semibold mb-3">Service Scope</h2>
-            <p>{COMPANY} provides ERV cleaning, ERV maintenance support, inspection support, and related facility service coordination. Service descriptions on this website are general summaries only. The final scope, schedule, and deliverables for any service are governed by the applicable written estimate, work order, or service agreement.</p>
+            <p>{COMPANY} provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support. Service descriptions on this website are general summaries only. The final scope, schedule, and deliverables for any service are governed by the applicable written estimate, work order, or service agreement.</p>
             <p className="mt-3">ERV installation and replacement support, when referenced, is coordinated through qualified subcontractor partners unless a separate written agreement states otherwise.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-3">No Mechanical, Engineering, or Code Compliance Advice</h2>
-            <p>Information on this website is not mechanical engineering, HVAC design, electrical, code-compliance, legal, or regulatory advice. Mechanical repairs, electrical work, duct modifications, permitting, and code-sensitive work may require review or performance by properly qualified professionals.</p>
+            <h2 className="text-xl font-semibold mb-3">No Mechanical, Engineering, HVAC, or Code Compliance Advice</h2>
+            <p>Information on this website is not mechanical engineering, HVAC design, electrical, code-compliance, legal, or regulatory advice. FogTech does not perform licensed HVAC repair, refrigerant work, electrical repair, mechanical modification, or code-required HVAC services unless coordinated with a qualified provider.</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold mb-3">Not Medical or Health Advice</h2>
-            <p>Nothing on this website constitutes medical, public health, or indoor-air-quality certification advice. ERV cleaning and maintenance support may help maintain cleaner accessible components, but it is not a substitute for professional medical guidance, public health recommendations, or a comprehensive building operations program.</p>
+            <p>Nothing on this website constitutes medical, public health, or indoor-air-quality certification advice. Cleaning, fogging, sanitizing, ERV maintenance, and basic airflow support are not substitutes for professional medical guidance, public health recommendations, or a comprehensive building operations program.</p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold mb-3">No Guarantee of Specific Outcomes</h2>
-            <p>While we stand behind our work with a satisfaction commitment subject to service agreement terms, we do not guarantee specific airflow, energy savings, health outcomes, indoor air quality results, or system performance changes. Results may vary based on system condition, building design, maintenance history, and factors outside our control.</p>
+            <p>While we stand behind our work with a satisfaction commitment subject to service agreement terms, we do not guarantee specific sanitation, health, airflow, energy savings, indoor air quality, or system performance outcomes. Results may vary based on property condition, system condition, building design, maintenance history, and factors outside our control.</p>
           </section>
 
           <section>

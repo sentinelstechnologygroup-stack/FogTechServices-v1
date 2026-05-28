@@ -15,6 +15,8 @@ import {
   UserCheck,
   CheckCircle2,
   AlertCircle,
+  Droplets,
+  SprayCan,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
@@ -22,79 +24,94 @@ import Footer from "@/components/Footer";
 
 const services = [
   {
-    Icon: Wind,
-    title: "ERV Cleaning",
+    Icon: Home,
+    title: "Residential Cleaning",
     description:
-      "Professional cleaning for energy recovery ventilation units to help reduce buildup, improve accessible component cleanliness, and support better system performance for commercial buildings, multi-family communities, homes, and facility teams.",
+      "Routine and deep cleaning support for homes, townhomes, apartments, move-in/move-out needs, and recurring household upkeep.",
+    serviceItems: [
+      "General home cleaning",
+      "Deep cleaning support",
+      "Move-in / move-out cleaning",
+      "Recurring cleaning schedules",
+      "Kitchen, bath, and common-area cleaning",
+    ],
+  },
+  {
+    Icon: Building2,
+    title: "Corporate Office Cleaning",
+    description:
+      "Cleaning support for offices, small commercial spaces, property teams, shared work areas, and scheduled facility upkeep.",
+    serviceItems: [
+      "Office cleaning",
+      "Breakroom and common-area cleaning",
+      "Restroom cleaning support",
+      "Recurring service scheduling",
+      "After-hours appointment options",
+    ],
+  },
+  {
+    Icon: Droplets,
+    title: "Fogging & Sanitizing",
+    description:
+      "Specialty fogging and sanitizing support for residential, office, commercial, and shared-space environments that need a fresher reset.",
+    serviceItems: [
+      "Fogging support",
+      "Surface sanitizing support",
+      "Residential and corporate service",
+      "One-time or scheduled appointments",
+    ],
+  },
+  {
+    Icon: SprayCan,
+    title: "Pressure Washing",
+    description:
+      "Exterior cleaning support for walkways, patios, driveways, entrances, common areas, and other appropriate outdoor surfaces.",
+    serviceItems: [
+      "Residential pressure washing",
+      "Commercial entrance and walkway cleaning",
+      "Patio and exterior common-area support",
+      "Scheduled exterior cleaning options",
+    ],
+  },
+  {
+    Icon: Wind,
+    title: "ERV Cleaning & Maintenance",
+    description:
+      "Specialty ERV cleaning and maintenance support for homes, commercial spaces, and facility teams that need practical ventilation-system upkeep.",
     serviceItems: [
       "Accessible ERV component cleaning",
-      "Core and housing cleaning support",
-      "Filter area cleaning",
-      "Intake and exhaust obstruction checks",
-      "Service documentation",
+      "Filter area and access-panel review",
+      "Visible buildup checks",
+      "Basic maintenance guidance",
+      "Service notes when appropriate",
     ],
+    safetyNote:
+      "ERV installation and replacement work is coordinated through qualified subcontractor partners unless otherwise agreed in writing. Mechanical, electrical, ducting, code-compliance, or repair issues may require a licensed professional.",
   },
   {
     Icon: Wrench,
-    title: "ERV Maintenance Support",
+    title: "Basic Non-Licensed Airflow Maintenance",
     description:
-      "Preventive ERV maintenance support for property managers, multi-family communities, homeowners, facility operators, and commercial building teams that need a practical service partner for recurring upkeep.",
+      "Basic HVAC-adjacent maintenance that does not require a licensed HVAC contractor, such as filter checks, vent cleaning support, and visible airflow-obstruction review.",
     serviceItems: [
-      "Filter inspection",
-      "Filter replacement support",
-      "Basic operation checks",
-      "Maintenance scheduling support",
-      "Service notes after each visit",
+      "Filter check and replacement support",
+      "Vent and register cleaning support",
+      "Visible obstruction checks",
+      "Basic maintenance documentation",
     ],
     safetyNote:
-      "For mechanical, electrical, ducting, code-compliance, or repair issues, FogTech may recommend review by a qualified HVAC, electrical, or mechanical professional.",
-  },
-  {
-    Icon: Building2,
-    title: "Multi-Family Community ERV Scheduled Service",
-    description:
-      "Scheduled ERV service options for apartment communities, condos, townhomes, and property management portfolios that need recurring maintenance support across multiple units or buildings.",
-    serviceItems: [
-      "Recurring ERV service scheduling",
-      "Community and portfolio service planning",
-      "Unit/access coordination notes",
-      "Multi-building service documentation",
-    ],
-  },
-  {
-    Icon: Home,
-    title: "Home ERV Service",
-    description:
-      "ERV service support for homeowners who need help with cleaning, inspection support, filter/access-panel review, or maintenance guidance for residential ERV systems.",
-    serviceItems: [
-      "Residential ERV cleaning support",
-      "Filter and access-panel review",
-      "Visible buildup checks",
-      "Maintenance guidance",
-    ],
-  },
-  {
-    Icon: Building2,
-    title: "ERV Inspection Support",
-    description:
-      "Visual review and documentation support to help facility teams identify maintenance needs, access-panel concerns, filter issues, buildup, and other items that may require follow-up.",
-  },
-  {
-    Icon: Users,
-    title: "ERV Installation & Replacement Coordination",
-    description:
-      "When installation or replacement is needed, FogTech can coordinate support through qualified subcontractor partners. FogTech does not represent itself as the direct installer unless separately agreed in writing.",
+      "FogTech does not perform licensed HVAC repair, refrigerant work, electrical repair, mechanical modification, or code-required HVAC services unless coordinated with a qualified provider.",
   },
 ];
 
 const clientTypes = [
-  { Icon: Briefcase, label: "Corporate Offices" },
-  { Icon: Factory, label: "Commercial Properties" },
-  { Icon: Users, label: "Multi-Family Communities" },
   { Icon: Home, label: "Homeowners" },
+  { Icon: Briefcase, label: "Corporate Offices" },
   { Icon: Store, label: "Small Businesses" },
-  { Icon: Users, label: "Facility Teams" },
+  { Icon: Users, label: "Multi-Family Communities" },
+  { Icon: Factory, label: "Commercial Properties" },
   { Icon: UserCheck, label: "Property Managers" },
+  { Icon: Users, label: "Facility Teams" },
 ];
 
 const fadeUp = (delay = 0) => ({
@@ -106,8 +123,8 @@ const fadeUp = (delay = 0) => ({
 
 export default function Services() {
   usePageMeta(
-    "ERV Installation, Cleaning & Maintenance Services | FogTech Services",
-    "FogTech Services provides ERV installation and replacement coordination, ERV cleaning, maintenance support, inspection support, and scheduled ERV service for commercial buildings, multi-family communities, homes, and facilities."
+    "Cleaning, Maintenance & Specialty Services | FogTech Services",
+    "FogTech Services provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support in Houston and surrounding areas."
   );
 
   return (
@@ -115,7 +132,6 @@ export default function Services() {
       <Navbar />
 
       <main id="main-content">
-        {/* ── Hero ──────────────────────────────────────── */}
         <section
           className="relative flex items-end overflow-hidden"
           style={{ minHeight: "clamp(620px, 72vh, 780px)" }}
@@ -132,8 +148,8 @@ export default function Services() {
               width="1920"
               height="1080"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/65 to-background/30" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/86 via-background/70 to-background/34" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/82 via-transparent to-background/20" />
           </div>
 
           <div className="relative z-10 w-full px-6 pt-32 pb-16 sm:px-10 sm:pt-36 lg:px-16">
@@ -143,24 +159,22 @@ export default function Services() {
               </p>
               <h1
                 id="services-hero-heading"
-                className="max-w-[820px] text-[clamp(2.75rem,5.5vw,5.25rem)] font-black tracking-tight leading-[0.95] mb-5"
+                className="max-w-[860px] text-[clamp(2.75rem,5.5vw,5.25rem)] font-black tracking-tight leading-[0.95] mb-5"
               >
-                ERV Cleaning &amp;
+                Cleaning &amp; Maintenance
                 <br className="hidden sm:block" />
-                <span className="text-primary">Maintenance Support</span>
+                <span className="text-primary">Services That Fit Real Properties</span>
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-200/90 mb-8">
-                FogTech Services helps commercial properties, multi-family communities,
-                homeowners, and facility teams keep energy recovery ventilation systems
-                cleaner, better maintained, and documented.
+                FogTech Services supports homes, offices, small businesses, property managers, and facility teams with practical cleaning, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact" aria-label="Request a service from FogTech Services">
+                <Link to="/contact" aria-label="Request cleaning or maintenance service from FogTech Services">
                   <Button
                     size="lg"
                     className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 h-14 text-base font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                   >
-                    Request ERV Service
+                    Request Service
                     <ArrowRight
                       className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                       aria-hidden="true"
@@ -181,7 +195,6 @@ export default function Services() {
           </div>
         </section>
 
-        {/* ── Services Grid ────────────────────────────── */}
         <section
           className="py-24 md:py-32 px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto"
           aria-labelledby="services-grid-heading"
@@ -194,7 +207,7 @@ export default function Services() {
               id="services-grid-heading"
               className="text-3xl md:text-4xl font-bold mt-4 tracking-tight"
             >
-              ERV Services FogTech Provides
+              Cleaning Services First, Specialty Maintenance When Needed
             </h2>
           </motion.div>
 
@@ -254,7 +267,6 @@ export default function Services() {
           </div>
         </section>
 
-        {/* ── Who We Serve ─────────────────────────────── */}
         <section
           className="py-20 md:py-28 bg-card/40 border-t border-b border-border/40"
           aria-labelledby="who-we-serve-heading"
@@ -286,7 +298,6 @@ export default function Services() {
           </div>
         </section>
 
-        {/* ── Why Maintenance Matters ───────────────────── */}
         <section
           className="py-24 md:py-32 px-6 sm:px-10 lg:px-16 max-w-4xl mx-auto text-center"
           aria-labelledby="maintenance-heading"
@@ -299,17 +310,14 @@ export default function Services() {
               id="maintenance-heading"
               className="text-3xl md:text-4xl font-bold tracking-tight mb-6"
             >
-              Why Maintenance Matters
+              Consistent Cleaning Prevents Bigger Problems
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Routine ERV cleaning and maintenance can help reduce buildup in accessible
-              components, support better airflow, and give facility teams clearer documentation
-              for ongoing building maintenance decisions.
+              Routine cleaning and maintenance helps homes, offices, and properties stay safer, fresher, and easier to operate. FogTech keeps the service offering practical: common cleaning first, then specialty support when the property needs fogging, sanitizing, pressure washing, ERV service, or basic airflow upkeep.
             </p>
           </motion.div>
         </section>
 
-        {/* ── Bottom CTA ───────────────────────────────── */}
         <section
           className="py-20 md:py-28 px-6 sm:px-10 lg:px-16 bg-card/40 border-t border-border/40 text-center"
           aria-labelledby="services-cta-heading"
@@ -322,18 +330,17 @@ export default function Services() {
               id="services-cta-heading"
               className="text-3xl md:text-4xl font-bold tracking-tight mb-5"
             >
-              Need ERV Cleaning or Maintenance Support?
+              Need Cleaning or Maintenance Support?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-              Contact FogTech Services to discuss your building, community, home, ERV service needs, and scheduling
-              options.
+              Contact FogTech Services to discuss your home, office, property, service needs, and scheduling options.
             </p>
             <Link to="/contact" aria-label="Get in touch with FogTech Services">
               <Button
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 h-14 text-base font-semibold group focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
-                Request ERV Service
+                Request Service
                 <ArrowRight
                   className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                   aria-hidden="true"

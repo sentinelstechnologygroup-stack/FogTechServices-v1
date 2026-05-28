@@ -24,18 +24,15 @@ export default function GuaranteeSection() {
             </div>
 
             <h2 id="guarantee-heading" className="text-3xl md:text-4xl font-bold tracking-tight">
-              100% Satisfaction
+              Clear Scope.
               <br />
-              <span className="text-primary">Guaranteed</span>
+              <span className="text-primary">Reliable Follow-Through.</span>
             </h2>
 
             <div className="w-16 h-px bg-border mx-auto my-8" aria-hidden="true" />
 
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-              If something about your ERV service visit does not meet the agreed
-              scope, contact us within 30 days. Our Houston-based team will
-              review the concern, discuss the service record, and work toward a
-              reasonable resolution under the applicable service agreement.
+              If something about your cleaning or maintenance visit does not match the agreed scope, contact us within 30 days. Our Houston-area team will review the concern, discuss the service record, and work toward a reasonable resolution under the applicable service agreement.
             </p>
           </div>
         </motion.div>

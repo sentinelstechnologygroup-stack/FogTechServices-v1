@@ -37,7 +37,7 @@ export default function Navbar() {
   const navLinks = [
     { label: "Services", href: "/services" },
     { label: "What We Do", href: "/#what-we-do", sectionId: "what-we-do" },
-    { label: "Why Fog", href: "/#why-fog", sectionId: "why-fog" },
+    { label: "Why FogTech", href: "/#why-fog", sectionId: "why-fog" },
     { label: "Our Mission", href: "/#mission", sectionId: "mission" },
     { label: "Guarantee", href: "/#guarantee", sectionId: "guarantee" },
     { label: "Contact", href: "/contact" },

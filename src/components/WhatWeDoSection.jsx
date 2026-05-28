@@ -1,25 +1,31 @@
 import React from "react";
-import { Building2, Home, CalendarCheck } from "lucide-react";
+import { Building2, Home, SprayCan, Wind, Droplets, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
 
 const features = [
   {
-    Icon: Building2,
-    title: "Commercial ERV Cleaning",
-    description:
-      "ERV cleaning and maintenance support for offices, facilities, retail spaces, warehouses, and other Houston-area commercial properties.",
-  },
-  {
-    Icon: CalendarCheck,
-    title: "Multi-Family Scheduled Service",
-    description:
-      "Planned ERV service options for apartment communities, condos, townhomes, and property management portfolios that need repeatable maintenance support.",
-  },
-  {
     Icon: Home,
-    title: "Home ERV Service",
+    title: "Residential Cleaning",
     description:
-      "ERV service support for homeowners who need cleaning, inspection support, filter/access-panel review, maintenance guidance, or installation and replacement coordination through qualified subcontractor partners.",
+      "Routine and deep cleaning support for houses, townhomes, apartments, move-in/move-out needs, and recurring household upkeep.",
+  },
+  {
+    Icon: Building2,
+    title: "Corporate Office Cleaning",
+    description:
+      "Cleaning support for offices, small commercial spaces, property teams, shared work areas, and scheduled facility upkeep.",
+  },
+  {
+    Icon: Droplets,
+    title: "Fogging, Sanitizing & Pressure Washing",
+    description:
+      "Specialty cleaning support for interior freshness, surface sanitizing needs, exterior cleaning, walkways, patios, and common areas.",
+  },
+  {
+    Icon: Wind,
+    title: "ERV & Basic Airflow Maintenance",
+    description:
+      "ERV cleaning, filter/access checks, vent cleaning support, and basic non-licensed HVAC-adjacent maintenance for homes and facilities.",
   },
 ];
 
@@ -38,23 +44,23 @@ export default function WhatWeDoSection() {
             What We Do
           </p>
           <h2 id="services-heading" className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
-            ERV service for buildings,
+            Cleaning and maintenance for
             <br />
-            <span className="text-primary">communities, and homes</span>
+            <span className="text-primary">homes, offices, and properties</span>
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
-            FogTech Services helps commercial properties, multi-family communities, and homeowners keep energy recovery ventilation systems cleaner, better maintained, and easier to schedule.
+            FogTech Services is being repositioned as a practical cleaning and maintenance company first, with specialty support for fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow-related service needs.
           </p>
         </motion.div>
 
-        <div className="grid gap-5 md:grid-cols-3 md:gap-6">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 md:gap-6">
           {features.map((feature, i) => (
             <motion.article
               key={feature.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
+              transition={{ duration: 0.6, delay: i * 0.12 }}
               className="group relative rounded-2xl border border-border/50 bg-card p-7 transition-all duration-500 hover:border-primary/30 focus-within:border-primary/30 md:p-8"
             >
               <div

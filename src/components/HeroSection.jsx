@@ -8,11 +8,11 @@ function trackEvent(eventName, params = {}) {
   // window.gtag?.('event', eventName, params);
 }
 
-const HERO_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/3c48ab0cf_generated_image.png";
+const HERO_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/24959acde_generated_3602c4fc.png";
 
 const trustBadges = [
-  { Icon: Clock, label: "Scheduled ERV Service" },
-  { Icon: Shield, label: "Commercial, Multi-Family & Home ERV Support" },
+  { Icon: Clock, label: "Scheduled Cleaning & Maintenance" },
+  { Icon: Shield, label: "Residential, Corporate & Specialty Support" },
   { Icon: MapPin, label: "Houston, TX & Surrounding Areas" },
 ];
 
@@ -31,7 +31,7 @@ export default function HeroSection() {
           loading="eager"
           fetchPriority="high"
           decoding="async"
-          className="h-full w-full object-cover brightness-[0.78] contrast-[0.92] [object-position:62%_center] md:[object-position:60%_center] lg:[object-position:58%_center]"
+          className="h-full w-full object-cover brightness-[0.72] contrast-[0.92] [object-position:62%_center] md:[object-position:60%_center] lg:[object-position:58%_center]"
           width="1920"
           height="1080"
         />
@@ -39,14 +39,14 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(5,10,15,0.96) 0%, rgba(5,10,15,0.86) 42%, rgba(5,10,15,0.52) 70%, rgba(5,10,15,0.34) 100%)",
+              "linear-gradient(90deg, rgba(5,10,15,0.97) 0%, rgba(5,10,15,0.88) 42%, rgba(5,10,15,0.56) 70%, rgba(5,10,15,0.38) 100%)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(5,10,15,0.36) 0%, transparent 34%, rgba(5,10,15,0.66) 100%)",
+              "linear-gradient(180deg, rgba(5,10,15,0.36) 0%, transparent 34%, rgba(5,10,15,0.68) 100%)",
           }}
         />
       </div>
@@ -58,7 +58,7 @@ export default function HeroSection() {
           paddingBottom: "clamp(48px, 8vh, 96px)",
         }}
       >
-        <div className="max-w-[940px]">
+        <div className="max-w-[960px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ export default function HeroSection() {
           >
             <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">
-              Houston&apos;s ERV Cleaning &amp; Maintenance Specialists
+              Houston Cleaning, Maintenance & Specialty Service Support
             </span>
           </motion.div>
 
@@ -77,22 +77,20 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mb-6 max-w-[900px] text-[clamp(2.75rem,5.4vw,5.35rem)] font-black leading-[0.95] tracking-tight"
+            className="mb-6 max-w-[920px] text-[clamp(2.75rem,5.4vw,5.35rem)] font-black leading-[0.95] tracking-tight"
           >
-            ERV Cleaning &amp; Maintenance
+            Cleaning &amp; Maintenance
             <br className="hidden lg:block" /> for{" "}
-            <span className="text-primary">Healthier, More Efficient Buildings</span>
+            <span className="text-primary">Homes, Offices & Facilities</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="mb-10 max-w-[660px] text-lg leading-relaxed text-slate-200 md:text-xl"
+            className="mb-10 max-w-[700px] text-lg leading-relaxed text-slate-200 md:text-xl"
           >
-            FogTech Services helps commercial properties, multi-family communities, facility
-            teams, and homeowners maintain cleaner energy recovery ventilation systems
-            through professional ERV cleaning, inspection support, and scheduled maintenance services.
+            FogTech Services helps homeowners, property managers, offices, and small businesses keep spaces cleaner, better maintained, and easier to manage with routine cleaning, fogging, sanitizing, pressure washing, ERV service, and basic non-licensed airflow maintenance support.
           </motion.p>
 
           <motion.div
@@ -103,25 +101,25 @@ export default function HeroSection() {
           >
             <a
               href="/contact"
-              onClick={() => trackEvent("hero_cta_click", { type: "request_erv_service" })}
-              aria-label="Request ERV service from FogTech Services"
+              onClick={() => trackEvent("hero_cta_click", { type: "request_service" })}
+              aria-label="Request cleaning or maintenance service from FogTech Services"
             >
               <Button
                 size="lg"
                 className="h-13 rounded-full bg-primary px-8 text-base font-semibold text-primary-foreground hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 group"
               >
-                Request ERV Service
+                Request Service
                 <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </Button>
             </a>
 
-            <Link to="/services" aria-label="View our ERV and cleaning services">
+            <Link to="/services" aria-label="View FogTech cleaning and maintenance services">
               <Button
                 size="lg"
                 variant="outline"
                 className="h-13 rounded-full border-white/25 bg-black/10 px-8 text-base text-white hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
-                View ERV Services
+                View Services
               </Button>
             </Link>
           </motion.div>

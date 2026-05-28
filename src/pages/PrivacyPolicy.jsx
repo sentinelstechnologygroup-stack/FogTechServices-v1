@@ -11,7 +11,7 @@ const EMAIL = "info@fogtechservices.com";
 export default function PrivacyPolicy() {
   usePageMeta(
     "Privacy Policy | FogTech Services",
-    "Read the FogTech Services privacy policy for ERV, indoor air quality, and ventilation service inquiries in the Houston area."
+    "Read the FogTech Services privacy policy for cleaning, maintenance, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance service inquiries in the Houston area."
   );
 
   return (
@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-semibold mb-3">1. Who We Are</h2>
-            <p>{COMPANY} ("we," "us," or "our") provides ERV cleaning, maintenance support, and related facility service coordination in the Houston, Texas area. This Privacy Policy explains how we collect, use, and protect information you provide when you contact us or use our website.</p>
+            <p>{COMPANY} ("we," "us," or "our") provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support in the Houston, Texas area. This Privacy Policy explains how we collect, use, and protect information you provide when you contact us or use our website.</p>
           </section>
 
           <section>
@@ -67,7 +67,7 @@ export default function PrivacyPolicy() {
             <p>We use collected information to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-3 text-muted-foreground">
               <li>Respond to your inquiries and service requests</li>
-              <li>Schedule and provide ERV cleaning, maintenance support, and related services</li>
+              <li>Schedule and provide cleaning, maintenance, fogging, sanitizing, pressure washing, ERV maintenance, and related services</li>
               <li>Send service-related communications</li>
               <li>Improve our website and customer experience</li>
             </ul>

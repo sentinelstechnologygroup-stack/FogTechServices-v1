@@ -15,35 +15,37 @@ const contactInfo = [
   { Icon: Phone, label: "Call Us", value: "832-755-6533", href: "tel:+18327556533" },
   { Icon: Mail, label: "Email", value: "info@fogtechservices.com", href: "mailto:info@fogtechservices.com" },
   { Icon: MapPin, label: "Service Area", value: "Houston, TX & Surrounding Areas", href: null },
-  { Icon: Clock, label: "Scheduling", value: "Commercial, multi-family, and home service appointments", href: null },
+  { Icon: Clock, label: "Scheduling", value: "Residential, corporate, and specialty service appointments", href: null },
 ];
 
 const serviceOptions = [
-  "ERV Cleaning",
-  "ERV Scheduled Service Plan",
-  "Multi-Family Community ERV Scheduled Service",
-  "Home ERV Service",
-  "ERV Maintenance",
-  "ERV Inspection Support",
-  "ERV Filter / Access Panel Review",
-  "ERV Installation & Replacement Coordination",
-  "Recurring Facility Service Plan",
+  "Residential Cleaning",
+  "Deep Cleaning",
+  "Move-In / Move-Out Cleaning",
+  "Corporate Office Cleaning",
+  "Recurring Cleaning Service",
+  "Fogging & Sanitizing",
+  "Pressure Washing",
+  "ERV Cleaning & Maintenance",
+  "Basic Non-Licensed Airflow Maintenance",
+  "Filter / Vent Cleaning Support",
   "Not Sure / Need Guidance",
   "Other",
 ];
 
 const propertyTypeOptions = [
-  "Office Building",
-  "Multi-Family Community",
-  "Apartment / Condo Property",
   "Single-Family Home",
   "Townhome",
-  "Medical / Healthcare Facility",
-  "School / Childcare Facility",
-  "Industrial / Warehouse Facility",
+  "Apartment / Condo",
+  "Office Building",
+  "Small Business",
   "Retail / Commercial Space",
-  "Restaurant / Food Service",
+  "Multi-Family Community",
   "Property Management Portfolio",
+  "Industrial / Warehouse Facility",
+  "School / Childcare Facility",
+  "Medical / Healthcare Facility",
+  "Restaurant / Food Service",
   "Other",
 ];
 
@@ -54,7 +56,7 @@ const preferredWindowOptions = [
   "Flexible",
 ];
 
-const unitCountOptions = ["1", "2–5", "6–10", "10+", "Not Sure"];
+const unitCountOptions = ["1 area", "2–5 areas", "6–10 areas", "10+ areas", "Not Sure"];
 
 const initialForm = {
   name: "",
@@ -136,10 +138,10 @@ export default function ContactSection() {
           <h2 id="contact-heading" className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
             Ready to schedule
             <br />
-            <span className="text-primary">ERV service?</span>
+            <span className="text-primary">cleaning or maintenance?</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            Tell us about your building, community, home, ERV units, and preferred schedule so we can route your request correctly.
+            Tell us about your home, office, property, service needs, and preferred schedule so we can route your request correctly.
           </p>
         </motion.div>
 
@@ -153,7 +155,7 @@ export default function ContactSection() {
             aria-label="Contact information"
           >
             <p className="text-lg leading-relaxed text-muted-foreground">
-              FogTech Services supports commercial properties, multi-family communities, facility teams, and homeowners across the Houston area with ERV cleaning, maintenance, and scheduled service options.
+              FogTech Services supports homeowners, offices, commercial properties, property teams, and facility operators across the Houston area with cleaning, maintenance, fogging, sanitizing, pressure washing, ERV service, and scheduled service options.
             </p>
 
             <ul className="space-y-6 p-0 list-none">
@@ -193,7 +195,7 @@ export default function ContactSection() {
           >
             <form
               onSubmit={handleSubmit}
-              aria-label="ERV service and quote request form"
+              aria-label="Cleaning and maintenance service request form"
               className="space-y-6 rounded-3xl border border-border/50 bg-card p-7 sm:p-8 md:p-10"
             >
               <div className="grid gap-5 sm:grid-cols-2 sm:gap-6">
@@ -215,12 +217,12 @@ export default function ContactSection() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="contact-company" className="text-sm text-muted-foreground">
-                    Company / Community
+                    Company / Property
                   </Label>
                   <Input
                     id="contact-company"
                     name="company"
-                    placeholder="Company, property, or HOA name"
+                    placeholder="Company, property, HOA, or organization name"
                     value={form.company}
                     onChange={updateField("company")}
                     className="h-12 rounded-xl border-border/50 bg-secondary/50"
@@ -293,7 +295,7 @@ export default function ContactSection() {
                 />
                 <SelectField
                   id="unitCount"
-                  label="Approximate Number of ERV Units"
+                  label="Approximate Size / Number of Areas"
                   value={form.unitCount}
                   onChange={updateField("unitCount")}
                   options={unitCountOptions}
@@ -307,7 +309,7 @@ export default function ContactSection() {
                 <Textarea
                   id="contact-message"
                   name="message"
-                  placeholder="Tell us about your ERV system, building type, service urgency, preferred schedule, access requirements, or whether this is a one-time or recurring service request."
+                  placeholder="Tell us about the property, service type, approximate size, urgency, preferred schedule, access requirements, and whether this is a one-time or recurring request."
                   value={form.message}
                   onChange={updateField("message")}
                   className="min-h-[140px] resize-none rounded-xl border-border/50 bg-secondary/50"
@@ -320,7 +322,7 @@ export default function ContactSection() {
                 type="submit"
                 disabled={sending}
                 className="h-14 w-full rounded-xl bg-primary text-base font-semibold text-primary-foreground hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                aria-label={sending ? "Sending your ERV service request..." : "Send your ERV service request"}
+                aria-label={sending ? "Sending your service request..." : "Send your service request"}
               >
                 {sending ? (
                   <div className="h-5 w-5 animate-spin rounded-full border-2 border-primary-foreground/30 border-t-primary-foreground" aria-hidden="true" />

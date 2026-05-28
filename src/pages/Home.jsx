@@ -12,8 +12,8 @@ import MobileCallButton from "@/components/MobileCallButton";
 
 export default function Home() {
   usePageMeta(
-    "FogTech Services | ERV Installation, Indoor Air Quality & HVAC Solutions – Houston, TX",
-    "FogTech Services provides ERV installation coordination, ERV cleaning, indoor air quality improvements, ventilation support, and healthier air solutions for homes, commercial properties, and multi-family communities in Houston and surrounding areas."
+    "FogTech Services | Cleaning, Maintenance & Specialty Services – Houston, TX",
+    "FogTech Services provides residential and corporate cleaning, routine maintenance, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow-related service support in Houston and surrounding areas."
   );
 
   return (
@@ -35,8 +35,8 @@ export default function Home() {
 
           {/* Mid-page CTA after services intro */}
           <MidPageCTA
-            heading="ERV Service for Houston Buildings, Communities & Homes"
-            subtext="From commercial facilities to multi-family communities and home ERV systems, FogTech Services supports scheduled ERV cleaning and maintenance across the Houston area."
+            heading="Cleaning & Maintenance Support for Homes, Offices & Properties"
+            subtext="From routine cleaning to fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow upkeep, FogTech Services helps keep Houston-area spaces cleaner and better maintained."
             location="after-what-we-do"
           />
 
@@ -45,8 +45,8 @@ export default function Home() {
 
           {/* Mid-page CTA before guarantee */}
           <MidPageCTA
-            heading="Ready to schedule ERV service?"
-            subtext="Commercial, multi-family, and home ERV service requests are available by appointment. Submit a request and we'll follow up to review your system, schedule, and service needs."
+            heading="Ready to schedule cleaning or maintenance?"
+            subtext="Residential and corporate service requests are available by appointment. Submit a request and we'll follow up to review your property, service needs, and preferred schedule."
             location="before-guarantee"
           />
 
