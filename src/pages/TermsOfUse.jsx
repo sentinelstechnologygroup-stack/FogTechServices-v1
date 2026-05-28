@@ -52,7 +52,7 @@ export default function TermsOfUse() {
 
           <section>
             <h2 className="text-xl font-semibold mb-3">2. Services Described</h2>
-            <p>The Site provides information about residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support offered by {COMPANY} in the Houston, Texas metropolitan area. All service inquiries submitted through the Site are subject to a separate service agreement.</p>
+            <p>The Site provides information about residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance support offered by {COMPANY} in the Houston, Texas metropolitan area. All service inquiries submitted through the Site are subject to a separate service agreement.</p>
           </section>
 
           <section>

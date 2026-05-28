@@ -90,7 +90,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="mb-10 max-w-[700px] text-lg leading-relaxed text-slate-200 md:text-xl"
           >
-            FogTech Services helps homeowners, property managers, offices, and small businesses keep spaces cleaner, better maintained, and easier to manage with routine cleaning, fogging, sanitizing, pressure washing, ERV service, and basic non-licensed airflow maintenance support.
+            FogTech Services helps homeowners, property managers, offices, and small businesses keep spaces cleaner, better maintained, and easier to manage with routine cleaning, fogging, sanitizing, pressure washing, ERV service, and basic airflow maintenance support.
           </motion.p>
 
           <motion.div

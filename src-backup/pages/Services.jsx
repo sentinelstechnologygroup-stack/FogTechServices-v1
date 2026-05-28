@@ -124,7 +124,7 @@ const fadeUp = (delay = 0) => ({
 export default function Services() {
   usePageMeta(
     "Cleaning, Maintenance & Specialty Services | FogTech Services",
-    "FogTech Services provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support in Houston and surrounding areas."
+    "FogTech Services provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance support in Houston and surrounding areas."
   );
 
   return (

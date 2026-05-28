@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-semibold mb-3">1. Who We Are</h2>
-            <p>{COMPANY} ("we," "us," or "our") provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support in the Houston, Texas area. This Privacy Policy explains how we collect, use, and protect information you provide when you contact us or use our website.</p>
+            <p>{COMPANY} ("we," "us," or "our") provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance support in the Houston, Texas area. This Privacy Policy explains how we collect, use, and protect information you provide when you contact us or use our website.</p>
           </section>
 
           <section>

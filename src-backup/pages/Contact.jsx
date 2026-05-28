@@ -9,7 +9,7 @@ import MobileCallButton from "@/components/MobileCallButton";
 export default function Contact() {
   usePageMeta(
     "Contact Cleaning & Maintenance Service | FogTech Services",
-    "Contact FogTech Services for residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support across the Houston area."
+    "Contact FogTech Services for residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance support across the Houston area."
   );
 
   return (

@@ -11,7 +11,7 @@ const EMAIL = "info@fogtechservices.com";
 export default function Disclaimer() {
   usePageMeta(
     "Disclaimer | FogTech Services",
-    "Review the FogTech Services disclaimer for cleaning, maintenance, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support."
+    "Review the FogTech Services disclaimer for cleaning, maintenance, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance support."
   );
 
   return (
@@ -52,7 +52,7 @@ export default function Disclaimer() {
 
           <section>
             <h2 className="text-xl font-semibold mb-3">Service Scope</h2>
-            <p>{COMPANY} provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic non-licensed airflow maintenance support. Service descriptions on this website are general summaries only. The final scope, schedule, and deliverables for any service are governed by the applicable written estimate, work order, or service agreement.</p>
+            <p>{COMPANY} provides residential cleaning, corporate office cleaning, fogging, sanitizing, pressure washing, ERV maintenance, and basic airflow maintenance support. Service descriptions on this website are general summaries only. The final scope, schedule, and deliverables for any service are governed by the applicable written estimate, work order, or service agreement.</p>
             <p className="mt-3">ERV installation and replacement support, when referenced, is coordinated through qualified subcontractor partners unless a separate written agreement states otherwise.</p>
           </section>
 
