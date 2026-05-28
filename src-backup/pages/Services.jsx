@@ -139,7 +139,7 @@ export default function Services() {
         >
           <div className="absolute inset-0" aria-hidden="true">
             <img
-              src="https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/24959acde_generated_3602c4fc.png"
+              src="/images/services-hero.png"
               alt=""
               role="presentation"
               loading="eager"

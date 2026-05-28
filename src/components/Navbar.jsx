@@ -81,7 +81,7 @@ export default function Navbar() {
           onClick={() => setMobileOpen(false)}
         >
           <img
-            src="https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/c4370413d_image.png"
+            src="/images/logo.png"
             alt="FogTech Services logo"
             width="120"
             height="40"

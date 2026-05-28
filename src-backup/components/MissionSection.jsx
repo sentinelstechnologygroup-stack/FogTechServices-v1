@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const OFFICE_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/d9409370a_generated_ace5103d.png";
+const OFFICE_IMG = "/images/ourmission.png";
 
 export default function MissionSection() {
   return (

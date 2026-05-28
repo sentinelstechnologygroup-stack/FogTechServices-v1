@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
-const SERVICE_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/d9409370a_generated_ace5103d.png";
+const SERVICE_IMG = "/images/whyfog.png";
 
 const benefits = [
   "One company for common cleaning, maintenance, and specialty service needs",

@@ -8,7 +8,7 @@ function trackEvent(eventName, params = {}) {
   // window.gtag?.('event', eventName, params);
 }
 
-const HERO_IMG = "https://media.base44.com/images/public/6a10fd596a3ccc0c5e058305/24959acde_generated_3602c4fc.png";
+const HERO_IMG = "/images/home-hero.png";
 
 const trustBadges = [
   { Icon: Clock, label: "Scheduled Cleaning & Maintenance" },
